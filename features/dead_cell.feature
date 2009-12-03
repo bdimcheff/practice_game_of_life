@@ -2,7 +2,9 @@ Feature: Evolving a dead cell
   In order to create a functioning rules engine
   As a programmer of Conway's Game of Life
   I can evolve a single dead cell based
-
+  
+  @done
+  @wip
   Scenario: Dead cell with 0 neighbors stays dead
     Given the following setup
       | . | . | . |
@@ -26,7 +28,8 @@ Feature: Evolving a dead cell
       | . | . | . |
     When I evolve the board
     Then the center cell should be dead
-    
+
+  @wip    
   Scenario: Dead cell with 3 neighbors comes to life
     Given the following setup
       | x | x | x |
@@ -34,7 +37,8 @@ Feature: Evolving a dead cell
       | . | . | . |
     When I evolve the board
     Then the center cell should be alive
-    
+
+  @wip    
   Scenario: Dead cell with 4 neighbors stays dead
     Given the following setup
       | x | x | x |

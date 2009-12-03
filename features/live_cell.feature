@@ -3,6 +3,7 @@ Feature: Evolving a living cell
   As a programmer of Conway's Game of Life
   I can evolve a single living cell
 
+  @wip
   Scenario: Living cell with 0 neighbors dies
     Given the following setup
       | . | . | . |
